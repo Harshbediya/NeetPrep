@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | NEET Study Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-wrapper">
+        <div class="card login-box text-center">
+            <h2 style="margin-bottom: 0.5rem;">Welcome Back</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">Focus on your goal today.</p>
+
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" class="input-field" placeholder="student@example.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" class="input-field" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-full">Enter Dashboard</button>
+            </form>
+
+            <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted);">
+                Just click enter to simulate login.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function handleLogin(e) {
+            e.preventDefault();
+            // Simulate login
+            window.location.href = 'dashboard.html';
+        }
+    </script>
+</body>
+
+</html>
